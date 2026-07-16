@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  {% include head.html %}
+</head>
+<body class="bg-black text-zinc-200 font-sans antialiased">
+
+  {{ content }}
+
+  <!-- ============ FOOTER ============ -->
+  {% include footer.html %}
+
+  <!-- ============ SHARED SCRIPTS ============ -->
+  <script>
+    // Scroll fade-in with Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

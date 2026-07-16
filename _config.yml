@@ -1,0 +1,14 @@
+title: Riffer Madness
+description: An iOS App for musical brainstorming.
+url: "https://riffermadness.app"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile

@@ -1,0 +1,21 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Claude Code local config and project notes (kept local, not published)
+.claude/settings.local.json
+CLAUDE.md
+README.md
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+Gemfile.lock
