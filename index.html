@@ -53,19 +53,25 @@ description: An iOS App for musical brainstorming.
         <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
 
           <div class="carousel-slide w-full shrink-0">
-            <img src="assets/images/riffer-madness.001.png" alt="The Library — tap the Eye button to record a Riff" class="w-full" />
+            <img src="assets/images/images.001.png" alt="The Library — tap the Eye button" class="w-full" />
           </div>
           <div class="carousel-slide w-full shrink-0">
-            <img src="assets/images/riffer-madness.002.png" alt="Recorder — set BPM and record" class="w-full" />
+            <img src="assets/images/images.002.png" alt="Recorder — set BPM and record with optional metronome in headphone support" class="w-full" />
           </div>
           <div class="carousel-slide w-full shrink-0">
-            <img src="assets/images/riffer-madness.003.png" alt="Riff Editor — clip the audio" class="w-full" />
+            <img src="assets/images/images.003.png" alt="Riff Editor — clip audio and adjust gain" class="w-full" />
           </div>
           <div class="carousel-slide w-full shrink-0">
-            <img src="assets/images/riffer-madness.004.png" alt="The Library — select slots to compose" class="w-full" />
+            <img src="assets/images/images.004.png" alt="The Library — select slots to compose" class="w-full" />
           </div>
           <div class="carousel-slide w-full shrink-0">
-            <img src="assets/images/riffer-madness.005.png" alt="Composition Canvas — arrange slots" class="w-full" />
+            <img src="assets/images/images.005.png" alt="Composition Canvas — arrange slots on the canvas" class="w-full" />
+          </div>
+          <div class="carousel-slide w-full shrink-0">
+            <img src="assets/images/images.006.png" alt="Composition Canvas — tools to stack, duplicate, group, and delete slots on the canvas" class="w-full" />
+          </div>
+          <div class="carousel-slide w-full shrink-0">
+            <img src="assets/images/images.007.png" alt="Composition Canvas — filter, sort, and place slots on the canvas from The Library" class="w-full" />
           </div>
         </div>
 
@@ -77,6 +83,8 @@ description: An iOS App for musical brainstorming.
             <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 cursor-pointer" data-slide="2" aria-label="Slide 3"></button>
             <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 cursor-pointer" data-slide="3" aria-label="Slide 4"></button>
             <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 cursor-pointer" data-slide="4" aria-label="Slide 5"></button>
+            <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 cursor-pointer" data-slide="5" aria-label="Slide 6"></button>
+            <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 cursor-pointer" data-slide="6" aria-label="Slide 7"></button>
           </div>
         </div>
 
@@ -96,7 +104,7 @@ description: An iOS App for musical brainstorming.
   (function() {
     var track = document.getElementById('carousel-track');
     var dots = document.querySelectorAll('.carousel-dot');
-    var SLIDE_COUNT = 5;
+    var SLIDE_COUNT = 7;
     var AUTO_INTERVAL = 6600;
     var PAUSE_DURATION = 66000;
     var current = 0, autoTimer = null, pauseTimer = null;
